@@ -38,12 +38,7 @@ def main():
     if schemat == 2:
         elem2 = elem4_2D(g, N1x, N1w, W1)
         soe = SOE(g, elem2)
-    #     #print(soe.globalP)
-    #     displayArr(soe.globalC, "global C: ")
-    # # # displayArr(soe.globalP, "vecP")
-    #     displayArr(soe.H_C_dT, "[H] = [H]+[C]/dT ")
-    #     displayArr(soe.globalH_HBC, "[H + HBC]  ")
-    #     displayArr(soe.globalH, "[H]  ")
+    
         soe.displayResults()
 
     elif schemat == 3:
@@ -72,17 +67,18 @@ def main():
     print()
     print()
 
-    # for el in g.elements:
-    #     displayArr(el.jakobian, "JAKOBIAN")
-    #     #print(1/det(el.jakobian))
-    # print("deltaX", "\tdeltaY")
-    # print(g.deltaX,"\t", g.deltaY)
+    # # for el in g.elements:
+    # #     displayArr(el.jakobian, "JAKOBIAN")
+    # #     #print(1/det(el.jakobian))
+    # # print("deltaX", "\tdeltaY")
+    # # print(g.deltaX,"\t", g.deltaY)
     # # displayArr(soe.globalH, "global H: ") 
     # # displayArr(soe.globalH_HBC, "global H + HBC: ")
     # # displayArr(soe.globalC, "global C: ")
     # # displayArr(soe.globalP, "vecP")
     # # displayArr(soe.H_C_dT, "[H] = [H]+[C]/dT ")
-    drawPlot(g.nodesCoords)
+    # soe.displayResults()
+    # #drawPlot(g.nodesCoords)
 
 if  __name__ == '__main__':
     main() 

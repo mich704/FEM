@@ -45,7 +45,7 @@ class SOE:
             for j in range(self.grid.nN):
                 # {P} = {P}+{[C]/dT}*{T0}
                 vector[i] +=  (globalC[i,j] * self.grid.nodes[j].t0 / dT ) 
-        print(I, vector)
+        #print(I, vector)
         from scipy import linalg
         tempVec = linalg.solve(self.H_C_dT, vector)
 
